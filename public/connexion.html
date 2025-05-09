@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Connexion</title>
+  <link rel="stylesheet" href="/shared.css">
+</head>
+<body>
+    <header>
+        <div class="header-logo">
+          <img src="/image1.png" alt="Logo RandoShare" class="logo">
+        </div>
+        <div class="header-content">
+          <h1 class="titre-site">RandoShare</h1>
+          <nav class="header-nav">
+            <button class="nav-btn" onclick="location.href='/index.html'">
+              Accueil
+            </button>
+            <button class="nav-btn" onclick="location.href='/contribuer.html'">
+              Contribuer 
+            </button>
+      
+            <div id="auth-container"></div>
+          </nav>
+        </div>
+      </header>      
+
+  <main>
+    <h2 class="page-title">Connexion</h2>
+    <form id="login-form">
+      <div class="form-group">
+        <label for="username">Identifiant :</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Mot de passe :</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <div class="form-group">
+        <label>
+          <input type="checkbox" name="register">
+          Créer un nouveau compte
+        </label>
+      </div>
+      <div id="login-error" class="form-error"></div>
+      <button type="submit" class="nav-btn">Valider</button>
+    </form>
+  </main>
+
+  <script src="menu.js"></script>
+  <script src="connexion.js"></script>
+</body>
+</html>

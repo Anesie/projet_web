@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Liste des randonnées</title>
+  <link rel="stylesheet" href="/shared.css">
+</head>
+<body>
+  
+  <header>
+    <div class="header-logo">
+      <img src="/image1.png" alt="Logo RandoShare" class="logo">
+    </div>
+  
+    <div class="header-content">
+      <h1 class="titre-site">RandoShare</h1>
+      <nav class="header-nav">
+        <button class="nav-btn" onclick="location.href='/index.html'">
+          Accueil
+        </button>
+        <button class="nav-btn" onclick="location.href='/contribuer.html'">
+          Contribuer
+        </button>
+   
+        <div id="auth-container"></div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h2>Catalogue des Randonnées</h2>
+    <div class="sort-controls">
+    <button id="sort-name" class="nav-btn small">Trier par nom</button>
+    <button id="sort-rating" class="nav-btn small">Trier par popularité</button>
+  </div>
+    
+    <ul id="hikes-list"></ul>
+  </main>
+
+
+  <script src="index.js"></script>
+  <script src="menu.js"></script>
+</body>
+</html>

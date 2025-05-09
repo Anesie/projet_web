@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Détail randonnée</title>
+  <link rel="stylesheet" href="/shared.css">
+</head>
+<body>
+
+  <header>
+    <div class="header-logo">
+      <img src="/image1.png" alt="Logo RandoShare" class="logo">
+    </div>
+    <div class="header-content">
+      <h1 class="titre-site">RandoShare</h1>
+      <nav class="header-nav">
+        <button class="nav-btn" onclick="location.href='/index.html'">
+          Accueil 
+        </button>
+        <button class="nav-btn" onclick="location.href='/contribuer.html'">
+          Contribuer
+        </button>
+        <div id="auth-container"></div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div id="photo-container"></div>
+
+    <h2 id="hike-name"></h2>
+    <p id="hike-desc"></p>
+    <p><strong>Point de départ :</strong> <span id="hike-start"></span></p>
+
+    <div class="rating">
+      <div class="rating-info">
+        Note moyenne : <strong id="avg-rating">–</strong>
+        (<span id="votes">0</span> vote<span id="vote-s-plural">s</span>)
+      </div>
+      <div id="rate-stars" class="stars">
+        <span data-value="1">☆</span>
+        <span data-value="2">☆</span>
+        <span data-value="3">☆</span>
+        <span data-value="4">☆</span>
+        <span data-value="5">☆</span>
+      </div>
+      <div id="rating-error" class="form-error"></div>
+    </div>
+    
+  </main>
+  <script src="randonnee.js"></script>
+  <script src="menu.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Contribuer</title>
+  <link rel="stylesheet" href="/shared.css">
+</head>
+<body>
+
+  <header>
+    <div class="header-logo">
+      <img src="/image1.png" alt="Logo RandoShare" class="logo">
+    </div>
+    <div class="header-content">
+      <h1 class="titre-site">RandoShare</h1>
+      <nav class="header-nav">
+        <button class="nav-btn" onclick="location.href='/index.html'">
+          Accueil
+        </button>
+        <button class="nav-btn" onclick="location.href='/contribuer.html'">
+          Contribuer
+        </button>
+        <div id="auth-container"></div>
+      </nav>
+    </div>
+  </header>
+  
+  <main>
+    <h2>Proposer une randonnée</h2>
+    <form action="/api/randonnees" method="POST" enctype="multipart/form-data">
+      <div class="form-group">
+        <label for="name">Nom :</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+    
+      <div class="form-group">
+        <label for="description">Description :</label>
+        <textarea id="description" name="description" required></textarea>
+      </div>
+    
+      <div class="form-group">
+        <label for="start_address">Adresse du point de départ :</label>
+        <input type="text" id="start_address" name="start_address" required>
+      </div>
+
+      <div class="form-group">
+        <label for="photo">Photo :</label>
+        <input type="file" id="photo" name="photo" accept="image/*" required>
+      </div>
+    
+      <button type="submit" class="nav-btn">Enregistrer</button>
+    </form>
+  </main>
+
+  <script src="menu.js"></script>
+</body>
+</html>

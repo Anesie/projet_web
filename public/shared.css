@@ -1,0 +1,337 @@
+
+/* couleur */
+:root {
+  --beige-bg:        #d8c5ab;
+  --brown-btn:       #a9753f;
+  --brown-btn-hover: #966d39;
+  --white:           #ffffff;
+}
+
+header {
+  display: flex;
+  align-items: center;       
+  background-color: var(--beige-bg);
+  padding: 1rem 2rem;
+  width: 100%;
+}
+
+.header-logo {
+  flex: none;                
+}
+.header-logo .logo {
+  height: 100px;
+  object-fit: contain;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;     
+  align-items: flex-start;  
+  margin-left: 2rem;          
+}
+
+/* Titre */
+.titre-site {
+  margin: 0;
+  font-size: 2.5rem;
+  color: var(--white);
+  font-weight: 700;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+/* Boutons */
+.header-nav {
+  display: flex;
+  gap: 2rem;
+  margin-top: 0.75rem;        
+}
+
+/* Boutons barre menu*/
+.nav-btn {
+  background-color: var(--brown-btn);
+  border: none;
+  border-radius: 12px;
+  padding: 0.75rem 2rem;
+  color: var(--white);
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: background-color 0.2s, transform 0.1s;
+}
+.nav-btn:hover {
+  background-color: var(--brown-btn-hover);
+  transform: translateY(-2px);
+}
+
+
+main {
+  padding: 0 2rem;
+}
+
+/* Titre principal */
+h2 {
+  color: var(--brown-text);
+  font-size: 2rem;
+  text-align: center;
+  margin: 2rem 0 1rem;
+}
+
+/*Nom utilisateur*/
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 1rem;           
+}
+
+
+#auth-container {
+  margin-left: auto;
+  margin-right: 20px;       
+  position: relative;          
+}
+
+.welcome {
+  position: absolute;
+  bottom: 100%;             
+  left: 50%;               
+  transform: translateX(-50%) translateY(-0.5rem);
+  color: var(--brown-btn-hover);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+#auth-container .nav-btn {
+  position: relative;      
+  z-index: 1;              
+}
+
+
+
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 0.75rem;
+  font-size: 1.1rem;
+}
+
+/* Formulaires */
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  max-width: 600px;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 0.25rem;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+button[type="submit"] {
+  background-color: var(--brown-btn);
+  color: var(--white);
+  border: none;
+  border-radius: 4px;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin-top: 1rem;
+}
+
+button[type="submit"]:hover {
+  background-color: var(--brown-btn-hover);
+}
+
+/*formulaire page Contribuer*/
+.form-group {
+  display: flex;
+  flex-direction: column;    
+  margin-bottom: 1.5rem;
+}
+
+/* Label */
+.form-group label {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+/* Champs */
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-family: inherit;
+}
+
+.form-group textarea {
+  min-height: 240px;
+  resize: vertical;
+}
+
+form > button[type="submit"] {
+  background-color: var(--brown-btn);
+  color: var(--white);
+  border: none;
+  border-radius: 6px;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+  margin-top: 1rem;
+}
+form > button[type="submit"]:hover {
+  background-color: var(--brown-btn-hover);
+  transform: translateY(-1px);
+}
+
+
+main form button[type="submit"]:hover {
+  background-color: var(--brown-btn-hover);
+  transform: translateY(-1px);
+}
+
+.hike-info {
+  margin-bottom: 0.75rem; 
+}
+
+.btn-action {
+  display: inline-block;
+  background-color: var(--brown-btn);
+  color: var(--white);
+  text-decoration: none;
+  border: none;
+  border-radius: 6px;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+  margin-top: 0.25rem;
+}
+
+.btn-action:hover {
+  background-color: var(--brown-btn-hover);
+  transform: translateY(-1px);
+}
+
+.stars span {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.rating { 
+  margin: 1.5rem 0; 
+}
+
+/*------Photo importé-------*/
+#photo-container {
+  text-align: center;
+  margin: 1.5rem 0;
+}
+.hike-photo {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+/* Styles pour la notation */
+.rating {
+  margin: 1.5rem 2rem;
+}
+.rating-info {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+.stars span {
+  font-size: 2rem;
+  cursor: pointer;
+  user-select: none;
+}
+.form-error {
+  color: #c0392b;
+  margin-top: 0.5rem;
+  font-weight: 600;
+}
+
+/*tri */
+.sort-controls {
+  margin: 1rem 2rem;
+  display: flex;
+  gap: 1rem;
+}
+
+/* Liste des randonnées */
+#hikes-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 2rem;
+}
+
+.hike-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  background: var(--white);
+  padding: 0.75rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.thumb {
+  width: 80px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-right: 1rem;
+}
+
+.thumb.placeholder {
+  background: #eee;
+}
+
+/* Info de la rando */
+.hike-info {
+  flex: 1;
+  line-height: 1.3;
+}
+
+/* Bouton Voir */
+.btn-action {
+  background-color: var(--brown-btn);
+  border: none;
+  border-radius: 8px;
+  color: var(--white);
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-action:hover {
+  background-color: var(--brown-btn-hover);
+}
+
